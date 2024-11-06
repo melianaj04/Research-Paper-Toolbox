@@ -19,18 +19,17 @@ header {
 }
 
 nav {
-    background-color: #4B0082;
+    background-color: #6A0DAD;
     color: white;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 12px 20px;
-    margin: 0 10px;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -116,4 +115,3 @@ footer {
         padding: 15px;
     }
 }
-
