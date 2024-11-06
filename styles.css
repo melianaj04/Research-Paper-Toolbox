@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #6A0DAD;
+    color: #fff;
     line-height: 1.6;
 }
 
@@ -19,17 +19,18 @@ header {
 }
 
 nav {
-    background-color: #6A0DAD;
+    background-color: #4B0082;
     color: white;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 12px 20px;
+    margin: 0 10px;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -49,19 +50,19 @@ section {
 }
 
 section h2 {
-    color: #6A0DAD;
+    color: #fff;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 section h3 {
-    color: #4B0082;
+    color: #f0f0f0;
     font-size: 20px;
     margin-bottom: 8px;
 }
 
 section h4 {
-    color: #800080;
+    color: #e0e0e0;
     font-size: 18px;
     margin-bottom: 6px;
 }
