@@ -3,47 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet Resources</title>
+    <title>How to Organize and Analyze Research Data</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Internet Resources</h1>
+    <header>
+        <h1>How to Organize and Analyze Research Data</h1>
+    </header>
 
-<section>
-    <h2>Some Resources to Consider</h2>
-    <p>If you can obtain the same resource online, why request it? Some resources that are available online include:</p>
-    <ul>
-        <li>Public domain writings</li>
-        <li>Resources licensed under Creative Commons</li>
-        <li>Media files such as video, audio, and images</li>
-    </ul>
-    <p>In general, if you can avoid making a trip to the library, you can save yourself time when researching.</p>
-</section>
+    <main>
+        <section>
+            <p>This short lesson is intended for graduate and advanced undergraduate students undertaking original research projects. After completing the 30-minute lesson, you will be able to:</p>
+            <ul>
+                <li>Format raw research data in an Excel spreadsheet for efficient analysis</li>
+                <li>Run basic descriptive statistics in Excel</li>
+                <li>Prepare the document for statistical analysis in the software package PASW</li>
+            </ul>
+        </section>
 
-<section>
-    <h2>Using Web Resources for Research</h2>
-    <p>Some web resources can help you find additional resources, such as the following:</p>
-    <ul>
-        <li><strong>Google Scholar:</strong> Allows you to search for scholarly articles and view which articles are cited by other articles.</li>
-        <li><strong>Google Books:</strong> Allows you to view a preview of a book, or in some cases, the entire book, including the references section.</li>
-        <li><strong>Web of Science:</strong> Similar to Google Scholar, but for scientific papers.</li>
-    </ul>
-</section>
+        <!-- Sidebar for requirements -->
+        <aside>
+            <h2>Lesson Requirements</h2>
+            <p>For this lesson, you'll need the following:</p>
+            <ul>
+                <li>Microsoft Excel</li>
+                <li>PASW (formerly SPSS) statistics software, or free trial download</li>
+            </ul>
+            <p>You should already be familiar with:</p>
+            <ul>
+                <li>The basic functions and tools of Excel</li>
+                <li>Descriptive statistics and inferential statistics</li>
+                <li>Research design and how to identify independent and dependent variables</li>
+            </ul>
+        </aside>
 
-<aside>
-    <h3>Being Realistic</h3>
-    <p>If you're stuck when researching a topic in Technical Communication, try searching for a special issue, yearbook, or edited volume on your topic. Collections such as these offer you a wealth of resources and represent a snapshot of collective scholarship on a topic, which can help you determine how your own topic relates to that research.</p>
-</aside>
+        <section>
+            <h2>Format Data for Analysis</h2>
+            <p>Make sure the computer you are working on has Microsoft Excel installed. Open the document <em>ToolBox_DataLesson.xls</em> <a href="ToolBox_DataLesson.xls" download>(Download tutorial Excel file)</a> in Excel and follow along with the lesson.</p>
+            <ol>
+                <li>In the <strong>Raw_Dataset</strong> spreadsheet, each variable name must be unique and start with a letter. Change <code>4tutorial_types</code> to <code>tutorial_types</code> and update other names as needed.</li>
+                <li>Your spreadsheet should look like Figure 1 below.</li>
+            </ol>
+            <figure>
+                <img src="datalesson_fig3.png" alt="Formatted variables for analysis">
+                <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+            </figure>
+        </section>
 
-<section>
-    <h2>Case Study: Using Web Resources</h2>
-    <p>Near the completion of her research project, Bridgette starts to question some of the arguments in a central article in her paper, "<em>The Rise of Technical Writing Instruction in America</em>" by R.J. Connors (1982). She wants to see if other researchers have included atypical examples of technical writing instruction in their papers about the rise of Technical Communication as a discipline before World War II. Thinking that most articles written on this topic will have referenced Connors' article, she types the title into Google Scholar. She notices that Connors' article has been cited 62 times. From there, she searches the articles that cite Connors' article for the examples she is looking for.</p>
-</section>
+        <section>
+            <h2>Organize and Format Categorical Data</h2>
+            <p>Ensure consistency by standardizing data values. For example, change <code>"female"</code> to <code>"F"</code> and reformat multi-component data into individual columns.</p>
+            <figure>
+                <img src="datalesson_fig2.png" alt="Consistent data values">
+                <figcaption>Values for each variable are entered in a consistent format.</figcaption>
+            </figure>
+            <p>Replace categorical data values with "0" or "1" to create dichotomous variables.</p>
 
-<section>
-    <h2>That's It!</h2>
-    <p>Hopefully you learned a little bit about conducting research and obtaining resources. Remember, if you start researching early enough, you are not limited to only those resources that you can find online. Now that you have read these suggestions for researching, please take a short quiz to help you retain some key points from this lesson.</p>
-</section>
+            <!-- Sidebar explaining dichotomous variables -->
+            <aside>
+                <h2>Dichotomous Variables</h2>
+                <p>Dichotomous variables allow for the easy isolation of characteristics for analysis, enabling comparisons across experience levels and other categories in PASW.</p>
+            </aside>
+        </section>
+
+        <section>
+            <h2>Running Descriptive Statistics</h2>
+            <p>Copy the <em>Raw_Dataset</em> values into <strong>Sheet2</strong> and rename it <strong>Formatted_Data</strong>. Add columns for categorical values and replace data values with "0" or "1" where needed.</p>
+            <figure>
+                <img src="datalesson_fig3 (1).png" alt="Formatted categorical variables">
+                <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+            </figure>
+            <p>To run descriptive statistics:</p>
+            <ol>
+                <li>Go to <strong>Tools &gt; Data Analysis</strong> and select <strong>Descriptive Statistics</strong>.</li>
+                <li>Enter the input range and check <strong>Summary Statistics</strong>.</li>
+            </ol>
+            <figure>
+                <img src="datalesson_fig4.png" alt="Descriptive statistics output">
+                <figcaption>Excel will not run descriptive statistics with non-numeric characters, so re-enter variable labels if needed.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sidebar for descriptive statistics insight -->
+        <aside>
+            <h2>Insight from Descriptive Statistics</h2>
+            <p>Descriptive statistics can reveal interesting patterns, such as variations in perc_enjoy and perc_usefulness. High variance in perc_usefulness might indicate mixed perceptions of the system's utility.</p>
+        </aside>
+
+        <section>
+            <h2>Running Inferential Statistics</h2>
+            <p>Open the dataset in PASW and select <strong>Analyze &gt; Nonparametric Tests &gt; K Independent Samples</strong> to run the Kruskal-Wallis test for the <code>perc_usefulness</code> and <code>free_play</code> variables.</p>
+            <figure>
+                <img src="datalesson_fig6.png" alt="Kruskal-Wallis test setup">
+                <figcaption>For Kruskal-Wallis, select the independent and dependent variables appropriately.</figcaption>
+            </figure>
+            <p>Once the analysis is complete, save the output as a separate document for easy reference.</p>
+        </section>
+
+        <!-- Sidebar for statistical analysis guide -->
+        <aside>
+            <h2>Choosing the Correct Statistic</h2>
+            <p>Consult UCLA's <em>Choosing the Correct Statistic</em> guide to ensure that the statistical analysis aligns with your research question and data types.</p>
+        </aside>
+
+        <section>
+            <h2>Test Your Knowledge</h2>
+            <p>Now that you've completed the lesson, take a short quiz to test your understanding of research data formatting for statistical analysis.</p>
+        </section>
+    </main>
 
 </body>
 </html>
